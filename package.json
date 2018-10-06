@@ -26,10 +26,10 @@
     "lint-sol": "solhint contracts/*.sol contracts/libraries/*.sol contracts/examples/*.sol contracts/test/**/.sol",
     "lint": "npm run lint-ts; npm run lint-sol",
     "compile": "truffle compile --all",
-    "migrate": "truffle migrate --reset",
+    "migrate": "truffle migrate --reset -f 8 -to- 8",
     "prettify": "prettier --write test/ts/**/*.ts types/**/*.ts types/*.ts artifacts/*.ts",
     "prepublishOnly": "npm run dist",
-    "test": "npm run compile; npm run generate-typings; npm run transpile; npm run migrate; truffle test",
+    "test": "npm run compile; npm run generate-typings; npm run transpile; npm run migrate; truffle test transpiled/test/ts/integration/creditor_proxy.js",
     "chain": "ganache-cli --networkId 70 --accounts 20",
     "validate": "npm ls"
   },

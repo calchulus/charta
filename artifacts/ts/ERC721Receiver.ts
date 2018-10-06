@@ -275,5 +275,5 @@ export const ERC721Receiver =
   },
   "networks": {},
   "schemaVersion": "1.0.1",
-  "updatedAt": "2018-09-26T17:52:34.419Z"
+  "updatedAt": "2018-10-06T00:48:10.403Z"
 }
